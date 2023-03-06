@@ -9,6 +9,7 @@ public class Ejem01_ExcepcionesNoDefinidas {
 		System.out.println("Introduzca un numero");
 		int datoUsuario=0;
 		
+		
 		boolean correcto=true;
 		do {
 			try {
@@ -16,7 +17,7 @@ public class Ejem01_ExcepcionesNoDefinidas {
 				correcto=true;
 			} catch (InputMismatchException entradaErronea) {
 				entradaErronea.printStackTrace();
-				teclado.next(); //Capturamos el salto de línea
+				teclado.next(); //Capturamos el salto de lï¿½nea
 				System.out.println("Introduzca un numero");
 				correcto=false;
 			} 
